@@ -78,7 +78,7 @@ if __name__ == '__main__':
         dirname='/gws/nopw/j04/cidar/data/incoming/UM_control/'
     
     if args.output_base:
-        diroutname = arg.output_base
+        diroutname = args.output_base
     else:
         print('Using default output base')
         diroutname='/work/scratch-nopw/dlowe/nc3/'
@@ -108,7 +108,7 @@ if __name__ == '__main__':
     
     # p1 variable list, uncomment a single variables for which is required
     if args.met_variable_name:
-        variablename = args.met_variable_name
+        variablename = f'um_stash_source={args.met_variable_name}'
     else:
         print("using default met variable name")
         variablename = 'um_stash_source=m01s04i203' # | LARGE SCALE RAINFALL RATE    KG/M2/S
