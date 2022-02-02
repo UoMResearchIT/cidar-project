@@ -37,5 +37,5 @@ output_args="--output_base ${output_base}"
 
 variable_args="--met_variable_name ${variable_sources[$jobid]} --new_variable_name ${variable_names[$jobid]}"
 
-python pp2nc_general.py ${input_args} ${output_args} ${variable_args} --year 2003
+python pp2nc_general.py ${input_args} ${output_args} ${variable_args}
 
